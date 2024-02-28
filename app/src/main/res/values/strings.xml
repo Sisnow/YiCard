@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">yicard</string>
+    <string name="review">复习</string>
+    <string name="deck">卡组</string>
+    <string name="add">添加</string>
+    <string name="stat">统计</string>
+    <string name="mine">我的</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- res/values/strings.xml -->
+
+
+    <string name="help_text">
+      记忆卡片帮助指南\n
+欢迎使用记忆卡片！这个应用程序旨在帮助您有效地记忆和学习各种信息。以下是一份详细的帮助指南，以确保您充分利用这个工具。\n
+
+1. 创建新卡片\n
+在主页上，您将找到“创建新卡片”按钮。点击它，您可以开始编写您想要记忆的问题和答案。确保问题和答案清晰简洁，以便更容易记忆。\n
+
+2. 卡片分类\n
+您可以根据主题或学科对卡片进行分类。这有助于组织您的学习材料，使您能够更容易地找到相关信息。\n
+
+3. 编辑和删除卡片\n
+在每个卡片上，您将看到编辑和删除按钮。通过点击编辑按钮，您可以修改卡片的问题和答案。如果您想要删除卡片，点击删除按钮即可。\n
+
+4. 学习模式\n
+学习模式是一个交互式的工具，帮助您测试自己对卡片的记忆程度。选择学习模式后，应用程序将逐个呈现卡片，并要求您提供正确的答案。这有助于加强您的记忆。\n
+
+5. 定时提醒\n
+您可以设置定时提醒，以确保您定期复习卡片。复习是巩固记忆的关键，通过定期提醒，您可以更好地保持对信息的掌握。\n
+
+6. 反馈和支持
+我们重视您的反馈。如果您在使用过程中遇到问题，或者有任何建议，请在应用内的反馈部分告诉我们。我们将尽力提供支持并改进应用。\n
+
+感谢您选择记忆卡片，希望这个工具能够帮助您取得更好的学习成果！如果您有任何其他问题，请随时联系我们的客户支持。\n
+    </string>
+
+</resources>

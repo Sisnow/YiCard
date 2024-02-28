@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_review"
+        android:icon="@drawable/ic_review"
+        android:title="@string/review" />
+    <item
+        android:id="@+id/navigation_deck"
+        android:icon="@drawable/ic_deck"
+        android:title="@string/deck" />
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add" />
+    <item
+        android:id="@+id/navigation_stat"
+        android:icon="@drawable/ic_stat"
+        android:title="@string/stat" />
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/ic_mine"
+        android:title="@string/mine" />
+</menu>

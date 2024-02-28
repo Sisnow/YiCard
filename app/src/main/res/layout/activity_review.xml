@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_cartoon"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context="com.example.yicard.ReviewActivity">
+
+    <!-- 添加一个LinearLayout，用来容纳两个TextView -->
+    <Spinner
+        android:id="@+id/tag_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_margin="10dp"
+        android:background="@color/semitransparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <!-- 添加一个TextView，用来显示“最近复习时间” -->
+
+        <!-- 添加一个TextView，用来显示“下次复习时间” -->
+
+        <TextView
+            android:id="@+id/tv_last_review_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/semitransparent"
+            android:padding="10dp"
+            android:text="最近复习时间："
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_next_review_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/semitransparent"
+            android:padding="10dp"
+            android:text="下次复习时间："
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/semitransparent"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tag_spinner" />
+
+        <!-- 添加一个ImageView，用来显示是否收藏的标志 -->
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:adjustViewBounds="true"
+            android:background="@color/semitransparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_star_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_photo" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_margin="10dp"
+        android:background="@color/semitransparent"
+        android:padding="10dp"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="68dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:background="@color/semitransparent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content">
+
+
+            <Button
+                android:id="@+id/btn_know"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@color/char3day60"
+                android:gravity="center"
+                android:text="认识"
+                android:textColor="#4CAF50"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_blur"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:text="模糊"
+                android:textColor="#FF9800"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_forget"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:text="忘记"
+                android:textColor="#F44336"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
